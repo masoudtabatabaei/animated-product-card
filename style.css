@@ -18,10 +18,11 @@ body {
     width: 320px;
     height: 420px;
     border-radius: 20px;
-    /*box-shadow: 0 0px 15px 1px #777777;*/
+    box-shadow: 0 0px 80px -20px #2693f3;
     background-color: #122926;
     color: #ffffff;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card:before {
@@ -50,6 +51,7 @@ body {
 }
 
 .card .imgBox {
+    padding-top: 20px;
     position: relative;
     width: 100%;
     display: flex;
@@ -58,5 +60,56 @@ body {
 }
 
 .card .imgBox img {
-    width: 100%;
+    max-width: 100%;
+    transition: all 0.5s;
+}
+
+.card:hover .imgBox img {
+    max-width: 80%;
+    /*transform: scale(0.8);*/
+}
+
+.card .contentBox {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.5s;
+}
+
+.card .contentBox h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.card .contentBox .price {
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.card .contentBox a {
+    position: relative;
+    margin-top: 5px;
+    top: 200px;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 30px;
+    background-color: #2693f3;
+    color: #ffffff;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.card:hover .contentBox a {
+    top: 0;
+    opacity: 1;
 }
