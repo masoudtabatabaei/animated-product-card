@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+    background-color: #09161D;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+
+.card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    border-radius: 20px;
+    /*box-shadow: 0 0px 15px 1px #777777;*/
+    background-color: #122926;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    background-color: #2693f3;
+    transform: skewY(345deg);
+    transition: all 0.5s;
+}
+
+.card:hover:before {
+    transform: skewY(390deg);
+}
+
+.card:after {
+    content: 'Masoud';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 8em;
+    color: rgba(0,0,0,0.1);
+}
+
+.card .imgBox {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .imgBox img {
+    width: 100%;
+}
