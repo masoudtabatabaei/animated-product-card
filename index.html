@@ -9,15 +9,23 @@
     <title>Product Card</title>
 </head>
 <body>
+<div style="position: relative">
     <div class="card">
         <div class="imgBox">
             <img src="headphone.png">
         </div>
         <div class="contentBox">
             <h3>WIRELESS HEADPHONES</h3>
-            <h2 class="price">$40.<small>99</small></h2>
+            <h2 class="price">$40.
+                <small>99</small>
+            </h2>
             <a class="cta">Buy Now</a>
         </div>
     </div>
+    <img class="icon" data-value="1" src="music.png" style="position: absolute; top: -35px; right: -40px; width: 80px; transition: all 0.1s">
+    <img class="icon" data-value="-2" src="music-note.png" style="position: absolute; bottom: -60px; left: -40px; width: 80px; transition: all 0.1s">
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
