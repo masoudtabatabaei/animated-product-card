@@ -1,3 +1,3 @@
-# productCard
+# Animated Product Card
 
-##### The Product Card with parallax effect with Html , Css and Js
+##### The Product Card with parallax effect with HTML , CSS and Javascript
